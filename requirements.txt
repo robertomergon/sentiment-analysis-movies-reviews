@@ -1,0 +1,25 @@
+# Ejecucion de notebooks
+jupyter>=1.0
+ipykernel>=6.0
+
+# Analisis y visualizacion
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+seaborn>=0.12
+
+# Machine learning clasico
+scikit-learn>=1.3
+joblib>=1.3
+
+# Descarga del dataset de Kaggle
+kagglehub>=0.3
+
+# DistilBERT y explicabilidad
+# Python 3.14 requiere una version reciente de PyTorch.
+# Esta rueda CUDA 12.6 requiere un driver NVIDIA compatible (actualiza el
+# driver si `torch.cuda.is_available()` devuelve False).
+--extra-index-url https://download.pytorch.org/whl/cu126
+torch==2.11.0+cu126
+transformers>=4.35
+captum>=0.7
